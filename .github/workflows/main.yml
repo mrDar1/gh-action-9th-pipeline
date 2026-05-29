@@ -18,6 +18,9 @@ jobs:
           echo "User: $(whoami)"
           echo "Uptime:"
           uptime
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
 
       - name: Print custom message
         run: echo "Hello from AWS self-hosted runner! - it is king Dar message!"
